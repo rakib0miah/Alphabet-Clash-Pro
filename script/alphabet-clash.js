@@ -21,6 +21,8 @@ function handleKeyboardKeyUpEvent(event){
     // check matched or not 
     if(pleyerPressed === expectedAlphabet){
         console.log('You got a point')
+        removeBackgroundColorById(expectedAlphabet)
+        continueGame();
     }
     else{ console.log('You loss a point')
 
